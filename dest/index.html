@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PrivateJetBooking</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />	
+	<link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+	
+	<!-- Header -->
+	<header class="header">
+		<div class="container header-wrapper">
+			<div class="header-logo">
+				<img src="./img/logo.svg" alt="logo" class="header-logo__src">
+			</div>
+			<nav class="header-navigation">
+				<a href="#" class="header-navigation__link active">Home</a>
+				<a href="#" class="header-navigation__link">Booking</a>
+				<a href="#" class="header-navigation__link">Private Jat</a>
+				<a href="#" class="header-navigation__link">Specification</a>
+				<a href="#" class="header-navigation__link">Luxury Charters</a>
+				<a href="#" class="header-navigation__link">Membership</a>
+			</nav>
+			<div class="header-registration">
+				<a href="#" class="header-registration-reg">Register</a>
+				<a href="#" class="header-registration-sign">Sign In</a>
+			</div>
+			<div class="header-burger">
+				<i class="fa-solid fa-bars header-burger__icon"></i>
+			</div>
+		</div>
+	</header>
+	<!-- Header -->
+
+	<!-- Main -->
+	<main class="main">
+		<div class="container main-wrapper">
+			<div class="main-wrapper-left">
+				<h1 class="main-wrapper-left__title">
+					Enjoy <span>Reserved</span>
+                    Overhead bin space	
+				</h1>
+				<a href="#" class="main-wrapper-left__explore">
+					<span>Explore Now</span>
+					<i class="fa-solid fa-arrow-right"></i>
+				</a>
+			</div>
+			<div class="main-wrapper-right">
+				<img src="./img/wing-airplane-small.png" alt="wing-airplane-small" class="main-wrapper-right__src">
+			</div>	
+		</div>
+	</main>
+	<!-- Main -->
+
+	<section class="book-flight">
+		<div class="container book-flight-wrapper">
+			<div class="book-flight-properties">
+				<div class="book-properties-item">
+					<select class="book-properties-item__select">
+						<option value="round-trip">Round Trip</option>
+						<option value="round-trip">New York</option>
+						<option value="round-trip">Canada</option>
+					</select>
+				</div>
+				<div class="book-properties-item">
+					<select class="book-properties-item__select">
+						<option value="round-trip">Flight Type</option>
+					</select>
+				</div>
+				<div class="book-properties-item">
+					<select class="book-properties-item__select">
+						<option value="round-trip">Person</option>
+					</select>
+				</div>
+			</div>
+			<div class="book-flight-menu">
+				<div class="book-flight-menu__item book-flight-menu__item-1">
+					<p class="book-flight-menu__item__mini-title">FROM</p>
+					<p class="book-flight-menu__item-title">NEW YORK</p>
+					<p class="book-flight-menu__item-descr">
+						Los Angeles Intl Arpt,Los Angeles
+					</p>
+				</div>
+				<img src="./img/book-flight-arrow.svg" alt="bookFlightIcon" class="book-flight-menu__icon">
+				<div class="book-flight-menu__item book-flight-menu__item-2">
+					<p class="book-flight-menu__item__mini-title">FROM</p>
+					<p class="book-flight-menu__item-title">NEW YORK</p>
+					<p class="book-flight-menu__item-descr">
+						Los Angeles Intl Arpt,Los Angeles
+					</p>
+				</div>
+				<div class="book-flight-menu__item book-flight-menu__item-3">
+					<div class="book-flight-menu__item-departure-item">
+						<p class="book-flight-menu__item-departure-item-minititle">
+							DEPARTURE
+						</p>
+						<div class="book-flight-menu__item-departure-item-date">
+							<p class="book-flight-menu__item-departure-item-title">
+								Fri 15 Oct
+							</p>
+							<img src="./img/calendar-1.svg" alt="calendar">
+						</div>
+						<div class="book-flight-menu__item-arrows">
+							<p class="book-flight-menu__item-arrows-title">
+								Prev
+							</p>	
+							<p class="book-flight-menu__item-arrows-title-2">	
+								Next
+							</p>	
+						</div>	
+					</div>
+					<div class="book-flight-menu__item-departure-item">
+						<p class="book-flight-menu__item-departure-item-minititle">
+							Return
+						</p>
+						<div class="book-flight-menu__item-departure-item-date">
+							<p class="book-flight-menu__item-departure-item-title">
+								Tue 19 Oct
+							</p>
+							<img src="./img/calendar-1.svg" alt="calendar">
+						</div>
+						<div class="book-flight-menu__item-arrows">
+							<p class="book-flight-menu__item-arrows-title">
+								Prev
+							</p>	
+							<p class="book-flight-menu__item-arrows-title-2">	
+								Next
+							</p>	
+						</div>
+					</div>
+				</div>
+			</div>	
+			<a href="#" class="book-flight-requirements">
+				Add Requirements
+			</a>	
+			<div class="book-flight-btn">
+				<a href="#">Book Flight</a>
+				<i class="fa-solid fa-arrow-right-long"></i>
+			</div>																
+		</div>
+	</section>
+
+	<script src="./scripts/app.js"></script>
+</body>
+</html>
