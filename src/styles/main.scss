@@ -17,6 +17,7 @@ html {
 body {
 	font-family: $fontRoboto;
 	position: relative;
+	overflow-x: hidden;
 }
 
 .container {
@@ -105,6 +106,7 @@ li {
 	}
 	&-burger {
 		display: none;	
+		z-index: 6;
 		i {
 			font-size: 26px;
 			color:  black;
@@ -887,3 +889,83 @@ li {
 		margin-top: 100px;
 	}
 }
+
+.background {
+	background-color: rgba(black, 0.6);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 4;
+	display: none;
+	&-show {
+		display: block;
+	}
+}
+
+// Aside
+
+.aside {
+	position: absolute;
+	width: 400px;
+	top: 0px;
+	padding-top: 100px;
+	right: 0px;
+	background: linear-gradient(199deg, rgb(170 169 173) 0%, rgb(5, 31, 62) 100%);
+	height: 100%;
+	z-index: 5;
+	transform: translateX(100%);
+	display: none;
+	transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
+	&-menu {
+		margin-bottom: 100px;
+		&__link {
+			padding: 20px;	
+			text-align: center;
+			font-size: 24px;
+			font-family: $fontPoppins;
+			cursor: pointer;
+			transition: background .3s ease;
+			&:hover {
+				background: crimson;
+				color: white;
+			}
+		}
+	}
+	&-reg {
+		&-registration {
+			padding: 20px;	
+			text-align: center;
+			font-size: 24px;
+			font-family: $fontPoppins;
+			cursor: pointer;
+			transition: background .3s ease;
+			&:hover {
+				background: crimson;
+				color: white;
+			}
+		}
+		&-sign {
+			padding: 20px;	
+			text-align: center;
+			font-size: 24px;
+			font-family: $fontPoppins;
+			cursor: pointer;
+			transition: background .3s ease;
+			&:hover {
+				background: crimson;
+				color: white;
+			}
+		}
+	}
+	&-show {
+		transform: translateX(0%);
+	}
+	@media screen and (max-width: 1050px) {
+		display: block;
+	}
+	@media screen and (max-width: 800px) {
+		width: 100%;
+	}
+} 
